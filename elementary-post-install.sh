@@ -90,6 +90,7 @@ fi
 cp ~/dotfiles/sublime/Package\ Control.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
 if [[ ! -d ~/.config/sublime-text-3/Packages/User/ ]]; 
 	then mkdir -p ~/.config/sublime-text-3/Packages/User/; 
+fi
 cp ~/dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/
 cp ~/dotfiles/sublime/Package\ Control.sublime.settings ~/.config/sublime-text-3/Packages/User/
 
