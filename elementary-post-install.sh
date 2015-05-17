@@ -64,7 +64,9 @@ sduo apt-get install -y vlc
 sudo apt-get install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack lha arj cabextract file-roller
 
 # install c++ tools
-sudo apt-get install -y build-essentials
+sudo apt-get install -y build-essential libgl1-mesa-dev
+wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
+chmod +x qt-unified-linux-x64-online.run
 sudo apt-get install -y gcc-5 g++-5
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 
@@ -162,9 +164,9 @@ sudo apt-get -y autoremove
 
 # installed last because of interaction with terms of service
 sudo apt-get install -y popcorn-time
-
 echo '***Remember to add the ssh key to github and test the connection***'
 echo '***Open a terminal and use the command "ssh -T git@github.com" to test***' 
 echo '***Remember to switch to the latest gcc compiler'
 echo '***Open a terminal and use the command "sudo update-alternative --config gcc" to switch***'
 echo '***Remember to run the IntelliJ for the first time with script at /opt/idea/bin/idea.sh'
+
