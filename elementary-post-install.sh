@@ -98,9 +98,10 @@ cp ~/dotfiles/sublime/Package\ Control.sublime.settings ~/.config/sublime-text-3
 
 # install dotfiles
 cp ~/dotfiles/.bash_prompt ~/.bash_prompt
+cp ~/dotfiles/.bashrc ~/.bashrc
 cp ~/dotfiles/.gitconfig ~/.gitconfig
 cp ~/dotfiles/.git-prompt.sh ~/.git-prompt.sh
-echo -e "source ~/.bash_prompt" >> .bashrc
+cp ~/dotfiles/general.aliases ~/general.aliases
 
 # install android tools
 wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
@@ -169,4 +170,3 @@ echo '***Open a terminal and use the command "ssh -T git@github.com" to test***'
 echo '***Remember to switch to the latest gcc compiler'
 echo '***Open a terminal and use the command "sudo update-alternative --config gcc" to switch***'
 echo '***Remember to run the IntelliJ for the first time with script at /opt/idea/bin/idea.sh'
-
