@@ -108,10 +108,16 @@ wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
 tar -xvzf android-sdk_r24.2-linux.tgz
 wget https://static.realm.io/downloads/java/realm-java-0.80.1.zip
 unzip realm-java-0.80.1.zip
+wget https://services.gradle.org/distributions/gradle-2.4-all.zip
+unzip gradle-2.4-all.zip
 mkdir software-development
 mv android-sdk-linux/ ~/software-development/
 mv realm-java-0.80.1/ ~/software-development/
-
+mv gradle-2.4-all.zip ~/software-development/
+echo -e "export PATH=~/development/gradle-2.4/bin/:$PATH" >> .bashrc
+echo -e "export ANDROID_HOME=~/development/android-sdk-linux/" >> .bashrc
+echo -e "export PATH=$ANDROID_HOME/platform-tools:$PATH" >> .bashrc
+echo -e "export PATH=$ANDROID_HOME/tools:$PATH" >> .bashrc
 # install virtualbox
 sudo apt-get install -y virtualbox-4.3 dkms
 
