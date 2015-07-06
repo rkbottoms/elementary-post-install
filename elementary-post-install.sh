@@ -114,8 +114,9 @@ mkdir software-development
 mv android-sdk-linux/ ~/software-development/
 mv realm-java-0.80.1/ ~/software-development/
 mv gradle-2.4-all.zip ~/software-development/
-echo -e "export PATH=~/development/gradle-2.4/bin/:$PATH" >> .bashrc
-echo -e "export ANDROID_HOME=~/development/android-sdk-linux" >> .bashrc
+echo -e "export GRADLE_HOME=~/software-development/gradle-2.4" >> .bashrc
+echo -e "export PATH=$GRADLE_HOME/bin/:$PATH" >> .bashrc
+echo -e "export ANDROID_HOME=~/software-development/android-sdk-linux" >> .bashrc
 echo -e "export PATH=$ANDROID_HOME/platform-tools:$PATH" >> .bashrc
 echo -e "export PATH=$ANDROID_HOME/tools:$PATH" >> .bashrc
 # install virtualbox
