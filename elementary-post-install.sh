@@ -51,7 +51,7 @@ sudo apt-get install -y google-musicmanager-beta
 sudo apt-get install -y spotify-client
 
 # install miscellaneous programs
-sudo apt-get install -y ssh cable skype transmission gparted screenfetch ppa-purge i-nex gdebi-core
+sudo apt-get install -y ssh skype transmission gparted screenfetch ppa-purge i-nex gdebi-core hexchat
 wget https://www.unifiedremote.com/static/builds/server/linux-x64/638/urserver-3.2.4.638.deb
 sudo gdebi -y urserver-3.2.4.638.deb
 
