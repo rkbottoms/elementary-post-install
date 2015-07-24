@@ -29,6 +29,7 @@ wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | s
 sudo add-apt-repository ppa:tsbarnes/indicator-keylock
 sudo add-apt-repository ppa:emptythevoid/syspeeknew
 sudo add-apt-repository ppa:i-nex-development-team/stable
+sudo add-apt-repository ppa:gwendal-lebihan-dev/hexchat-stable 
 sudo apt-get update
 
 # fix gtk theme bug
