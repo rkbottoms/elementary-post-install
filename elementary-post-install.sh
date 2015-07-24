@@ -26,10 +26,10 @@ sudo add-apt-repository -y ppa:webupd8team/popcorntime
 sudo add-apt-repository -y ppa:djcj/screenfetch
 sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' >> /etc/apt/sources.list.d/virtualbox.list"
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-sudo add-apt-repository ppa:tsbarnes/indicator-keylock
-sudo add-apt-repository ppa:emptythevoid/syspeeknew
-sudo add-apt-repository ppa:i-nex-development-team/stable
-sudo add-apt-repository ppa:gwendal-lebihan-dev/hexchat-stable 
+sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
+sudo add-apt-repository -y ppa:emptythevoid/syspeeknew
+sudo add-apt-repository -y ppa:i-nex-development-team/stable
+sudo add-apt-repository -y ppa:gwendal-lebihan-dev/hexchat-stable 
 sudo apt-get update
 
 # fix gtk theme bug
@@ -43,7 +43,7 @@ sudo apt-get install -y ubuntu-restricted-extras
 
 # install elementary tweaks
 sudo apt-get install -y elementary-tweaks
-sudo apt-get install dconf-tools
+sudo apt-get install -y dconf-tools
 
 #install music programs
 sudo apt-get install -y rhythmbox
@@ -120,6 +120,7 @@ echo -e "export PATH=$GRADLE_HOME/bin/:$PATH" >> .bashrc
 echo -e "export ANDROID_HOME=~/software-development/android-sdk-linux" >> .bashrc
 echo -e "export PATH=$ANDROID_HOME/platform-tools:$PATH" >> .bashrc
 echo -e "export PATH=$ANDROID_HOME/tools:$PATH" >> .bashrc
+
 # install virtualbox
 sudo apt-get install -y virtualbox-4.3 dkms
 
@@ -146,6 +147,7 @@ sudo apt-get install -y numix-gtk-theme
 sudo apt-get install -y numix-icon-theme-circle
 sudo apt-get install -y libra-theme
 sudo apt-get install -y elementary-dark-theme
+
 # fixing hardcoded icons for numix-circle-theme
 git clone https://github.com/Foggalong/hardcode-fixer.git
 sudo bash fix.sh
