@@ -13,6 +13,7 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 sudo add-apt-repository -y ppa:mpstark/elementary-tweaks-daily
 sudo sh -c 'echo "deb http://dl.google.com/linux/musicmanager/deb/ stable main" >> /etc/apt/sources.list.d/google-musicmanager.list'
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 sudo add-apt-repository -y ppa:fossfreedom/rhythmbox
 sudo add-apt-repository -y ppa:snwh/pulp
