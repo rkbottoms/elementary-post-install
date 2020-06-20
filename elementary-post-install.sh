@@ -60,7 +60,7 @@ sudo gdebi -y urserver-3.2.4.638.deb
 sudo apt-get install -y gimp inkscape
 
 # install video programs
-sduo apt-get install -y vlc
+sudo apt-get install -y vlc
 
 # install file archiving/extraction tools
 sudo apt-get install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack lha arj cabextract file-roller
